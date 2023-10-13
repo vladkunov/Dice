@@ -32,6 +32,7 @@ function getRandomNumber() {
             if (randomNumber === 4) {
                 if (Math.random() < 0.1) {
                     document.getElementById(`number`).textContent = randomNumber;
+                    saveNumber(randomNumber);
                     numberChosen = 1
                 };
             };
@@ -70,5 +71,6 @@ for (; numArray.length <= 100 - 1; ) {
 
 console.log(`Number rolled : ${numArray}`)
 
-const resultString = numArray.join(` `).replace(/,/g, "");
-document.getElementById(`numArray`).textContent = `Numbers rolled (${numArray.length}): ${resultString}`;
+const resultString = numArray.join(``).replace(/,/g, "/n");
+document.getElementById(`numArray`).textContent = `Numbers rolled (${numArray.length}): 
+${resultString}`;

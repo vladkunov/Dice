@@ -6,5 +6,5 @@ p {
 p#numArray {
     font-size: 50px;
     word-wrap: break-word;
-    display: block;
+    /* display: block; */
 }
